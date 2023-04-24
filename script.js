@@ -73,6 +73,8 @@ fetch("https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/maste
         else if(v < 5.5) return 'rgb(147, 0, 0)'
         else return 'black'
       })
+      .attr('stroke', 'black')
+      .attr('stroke-width', '0.1px')
 
       .on('mouseover', (e,d) => {
         const monthFormat = (m) => {
